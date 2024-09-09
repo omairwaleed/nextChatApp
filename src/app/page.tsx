@@ -29,9 +29,7 @@ const Home = () => {
         <ChatCard /> <ChatCard /> <ChatCard /> <ChatCard /> <ChatCard />{" "}
         <ChatCard /> <ChatCard /> <ChatCard /> <ChatCard /> <ChatCard />
       </div>
-      <div className="row-span-12 col-span-9 bg-gray-400 px-4 py-4">
-        Inner body
-      </div>
+      <div className="row-span-12 col-span-9 bg-gray-400 px-4 py-4">Inner</div>
     </div>
   );
 };
