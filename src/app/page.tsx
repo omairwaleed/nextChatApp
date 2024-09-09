@@ -4,16 +4,16 @@ import { db } from "../../DB";
 import { person } from "../../DB/schema";
 
 const Home = () => {
-  // const fetchData = async () => {
-  //   console.time("myFunctionTimer");
-  //   const data = await db.select().from(person);
-  //   // await db
-  //   //   .insert(person)
-  //   //   .values({ id: 2, userName: "Omair", userCountry: "Egypt" });
-  //   console.timeEnd("myFunctionTimer");
-  //   console.log("data", data);
-  // };
-  // fetchData();
+  const fetchData = async () => {
+    console.time("myFunctionTimer");
+    const data = await db.select().from(person);
+    // await db
+    //   .insert(person)
+    //   .values({ id: 2, userName: "Omair", userCountry: "Egypt" });
+    console.timeEnd("myFunctionTimer");
+    console.log("data", data);
+  };
+  fetchData();
 
   return (
     <div className="h-full bg-red-700 grid grid-cols-12 grid-rows-12">
