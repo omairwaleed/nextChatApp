@@ -5,13 +5,18 @@ import { person } from "../../DB/schema";
 
 const Home = () => {
   const fetchData = async () => {
-    console.time("myFunctionTimer");
-    const data = await db.select().from(person);
-    // await db
-    //   .insert(person)
-    //   .values({ id: 2, userName: "Omair", userCountry: "Egypt" });
-    console.timeEnd("myFunctionTimer");
-    console.log("data", data);
+    try {
+      console.log("started");
+      console.time("myFunctionTimer");
+      const data = await db.select().from(person);
+      // await db
+      //   .insert(person)
+      //   .values({ id: 2, userName: "Omair", userCountry: "Egypt" });
+      console.timeEnd("myFunctionTimer");
+      console.log("data", data);
+    } catch (error) {
+      console.error(error);
+    }
   };
   fetchData();
 
