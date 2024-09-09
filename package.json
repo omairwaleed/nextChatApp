@@ -11,7 +11,6 @@
   "dependencies": {
     "@mantine/core": "^7.12.2",
     "@mantine/hooks": "^7.12.2",
-    "@sqlite.org/sqlite-wasm": "^3.46.1-build3",
     "@types/lodash": "^4.17.7",
     "better-sqlite3": "^11.2.1",
     "drizzle-orm": "^0.33.0",
